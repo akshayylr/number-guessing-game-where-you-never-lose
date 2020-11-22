@@ -1,10 +1,12 @@
 import random
 import tkinter
 print("welcome to 'NEVER LOSE' ")
-actual_number=int(random.randint(1,1000))
+actual_number=int(random.randint(1,100))
 guessed_number=0
-#print((actual_number))
+print((actual_number))
+tries=0
 while(guessed_number!=actual_number):
+    tries=tries+1
     guessed_number = int(input("take a guess of the number between 1 and 100: "))
     if guessed_number>actual_number:
         if guessed_number%actual_number==0:
@@ -21,5 +23,4 @@ while(guessed_number!=actual_number):
             print("your guess is less, guess a larger number")
             continue
 if guessed_number==actual_number:
-    print("you did it!!")
-
+    print("you did it!! in just "+str(tries)+" tries")
