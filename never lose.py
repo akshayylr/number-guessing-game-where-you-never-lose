@@ -1,7 +1,7 @@
 import random
 import tkinter
 print("welcome to 'NEVER LOSE' ")
-actual_number=int(random.randint(1,100))
+actual_number=int(random.randint(1,1000))
 guessed_number=0
 print((actual_number))
 tries=0
